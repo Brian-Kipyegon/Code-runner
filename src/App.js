@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Navigate } from "react-router-dom";
+import Home from './pages/Home';
+import Signup from './auth/Sign-up';
+import Login from './auth/Login';
+import RequiresAuth from './auth/RequiresAuth';
+import { useAuth } from './context-stores/Authcontext';
+import Loading from './pages/Loading';
 
 function App() {
+  const { loading, user, user_data } = useAuth();
+
+  if (loading) {
+    return <Loading />
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        {
+          user ? (
+            <>
+              <Route path="/" element={<RequiresAuth><Home /></RequiresAuth>} />
+              <Route path="/home" element={<RequiresAuth><Home /></RequiresAuth>} />
+            </>
+          ) : (
+            <>
+              <Route path="/" element={<Login />} />
+              <Route path="/sign-up" element={<Signup />} />
+              <Route path="/login" element={<Login />} />
+            </>
+          )
+        }
+      </Routes>
     </div>
   );
 }
