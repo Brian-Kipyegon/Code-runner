@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate, Link } from 'react-router-dom';
 import {collection, addDoc, Timestamp} from 'firebase/firestore';
+
+import '../css/Login.css';
 import { auth, db } from '../firebase-config';
 
 export default function Signup() {
@@ -21,16 +23,20 @@ export default function Signup() {
                     user_id: user.uid,
                     name: name,
                     created: Timestamp.now() 
-                })
+                }).then(() => {
+                    console.log('User added');
+                }).catch((error) => {
+                    console.log("Firebase error" + error);
+                });
 
                 navigate('/home', { replace: true })
             })
     }
 
     return (
-        <div>
+        <div className="login-page">
             <div className="form">
-                <form className="auth-form">
+                <form className="login-form">
                     <input type="text" placeholder="name" value={name} onChange={e => setName(e.target.value)} />
                     <input type="email" placeholder="email address" value={email} onChange={e => setEmail(e.target.value)} />
                     <input type="password" placeholder="password" value={password} onChange={e => setPassword(e.target.value)} />

@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from 'firebase/firestore';
 import { initializeAuth, browserSessionPersistence } from 'firebase/auth';
 import { getStorage } from "firebase/storage";
@@ -10,13 +9,13 @@ import { getStorage } from "firebase/storage";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDUJJnsDV3sjQMbg4g8Y2b_rYMyDXsVLQg",
-  authDomain: "ai21-hackathon.firebaseapp.com",
-  projectId: "ai21-hackathon",
-  storageBucket: "ai21-hackathon.appspot.com",
-  messagingSenderId: "652092554432",
-  appId: "1:652092554432:web:9288d417c4b34f18628125",
-  measurementId: "G-YYVCCM9G2X"
+  apiKey: "AIzaSyDtuKuR9k0vKWBAuN0W0d-jLsFA59cBlOY",
+  authDomain: "code-runner-fdd35.firebaseapp.com",
+  projectId: "code-runner-fdd35",
+  storageBucket: "code-runner-fdd35.appspot.com",
+  messagingSenderId: "579780544398",
+  appId: "1:579780544398:web:017d4fcc6db9b5f8a8c6df",
+  measurementId: "G-HTMXPRLVY4"
 };
 
 // Initialize Firebase
@@ -24,6 +23,5 @@ const app = initializeApp(firebaseConfig);
 const auth = initializeAuth(app, { persistence: browserSessionPersistence });
 const db = getFirestore(app);
 const storage = getStorage(app);
-const analytics = getAnalytics(app);
 
 export { auth, db, storage };

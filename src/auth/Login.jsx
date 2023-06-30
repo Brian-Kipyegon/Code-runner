@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
+
+import '../css/Login.css';
 import { auth } from '../firebase-config';
 
 export default function Login() {
@@ -19,9 +21,9 @@ export default function Login() {
     }
 
     return (
-        <div>
+        <div className="login-page">
             <div className="form">
-                <form className="auth-form">
+                <form className="login-form">
                     <input type="text" placeholder="email" name="email" value={email} onChange={e => setEmail(e.target.value)} /><br />
                     <input type="password" placeholder="password" name="password" value={password} onChange={e => setPassword(e.target.value)} /><br />
                     <button onClick={login}>login</button>
