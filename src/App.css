@@ -188,4 +188,48 @@
     height: 200px;
     z-index: 5;
 }
+
+.tool-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.file{
+    cursor: pointer;
+    margin: 1px;
+    border: 1px solid #ccc;
+}
+
+.file:hover{
+    background-color: #ccc;
+}
+
+.file-title{
+    margin: 0;
+    font-size: large;
+}
+
+/* Target the scrollbar track */
+.output::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as needed */
+}
+
+/* Target the scrollbar thumb (the draggable handle) */
+.output::-webkit-scrollbar-thumb {
+background-color: #6A737D; /* Set the color of the thumb */
+border-radius: 5px; /* Round the corners of the thumb */
+}
+
+/* Target the scrollbar track on hover */
+.output::-webkit-scrollbar-thumb:hover {
+background-color: #4B5261; /* Set a different color on hover */
+}
+
+/* Target the scrollbar track when being dragged */
+.output::-webkit-scrollbar-thumb:active {
+background-color: #2D333B; /* Set a different color when being dragged */
+}
+  
   
