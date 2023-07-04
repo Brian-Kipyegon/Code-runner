@@ -143,7 +143,7 @@ export default function Home() {
               <option value="vs">Default</option>
               <option value="vs-dark">Dark</option>
             </select>
-            <select className='select' onChange={(e) => setLanguage(e.target.value)}>
+            <select className='select' value={language} onChange={(e) => setLanguage(e.target.value)}>
               {
                 languages.map((lang) => {
                   return <option value={lang}>{lang}</option>
@@ -194,7 +194,7 @@ export default function Home() {
                         </div>
                       </div>
                       <div className='output'>
-                        <p className='output-text'>{output}</p>
+                        <pre className='output-text'>{output}</pre>
                       </div>
                       <div>
                         <textarea
@@ -285,6 +285,8 @@ export default function Home() {
                     filename && (
                       <p style={{
                         margin: '1px',
+                        fontSize: 'large',
+                        fontWeight: 'bold'
                       }}>Filename: {filename}.{langs[language].filext}</p>
                     )
                   }

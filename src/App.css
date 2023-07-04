@@ -122,7 +122,10 @@
 }
 
 .output-text{
-    padding: 10px;
+    margin: 15px;
+    font-size: large;
+    font-weight: 20px;
+    font-family: Consolas, monospace;
 }
 
 .editor-monaco{
@@ -224,12 +227,26 @@ border-radius: 5px; /* Round the corners of the thumb */
 
 /* Target the scrollbar track on hover */
 .output::-webkit-scrollbar-thumb:hover {
-background-color: #4B5261; /* Set a different color on hover */
+    background-color: #4B5261; /* Set a different color on hover */
 }
 
 /* Target the scrollbar track when being dragged */
 .output::-webkit-scrollbar-thumb:active {
 background-color: #2D333B; /* Set a different color when being dragged */
 }
-  
-  
+
+.save-inputs{
+    margin-left: 18px;
+}
+
+.save-input{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
