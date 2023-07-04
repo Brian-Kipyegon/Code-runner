@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate, Link } from 'react-router-dom';
 import {collection, addDoc, Timestamp} from 'firebase/firestore';
+import { ToastContainer, toast } from 'react-toastify';
 
 import '../css/Login.css';
 import { auth, db } from '../firebase-config';
@@ -31,10 +32,14 @@ export default function Signup() {
 
                 navigate('/home', { replace: true })
             })
+            .catch((error) => {
+                toast.error("Error occured please try again");
+            });
     }
 
     return (
         <div className="login-page">
+            <ToastContainer />
             <div className="form">
                 <form className="login-form">
                     <input type="text" placeholder="name" value={name} onChange={e => setName(e.target.value)} />
