@@ -13,6 +13,7 @@ export default function Signup() {
     const [name, setName] = useState('');
     const navigate = useNavigate();
 
+    // Saves a registered user to firebase
     const register = (e) => {
         e.preventDefault();
 

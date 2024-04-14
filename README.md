@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# CodeRunner Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to CodeRunner Web! CodeRunner Web is a powerful web-based application that allows you to write, run, and debug code directly in your browser. Whether you're a seasoned developer or just starting out, CodeRunner Web provides a seamless and efficient coding experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Multi-Language Support:** CodeRunner Web supports a wide range of programming languages, including but not limited to Python, JavaScript, and many more.
+2. **Real-Time Code Execution:** Write your code and see the results instantly with our real-time code execution feature.
+3. **Integrated Code Editor:** Our intuitive and feature-rich code editor offers syntax highlighting, code completion, and indentation assistance.
+6. **Save and Share Code Snippets:** Save your code snippets for future reference.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Sign Up or Log In:** Create an account or log in to your existing account to access CodeRunner Web's full range of features.
+2. **Select Your Language:** Choose the programming language you want to code in from the dropdown menu.
+3. **Write and Run Code:** Start writing your code in the editor pane and press the "Run" button to execute it.
+5. **Save** Save your code snippets.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## System Requirements
 
-### `npm test`
+CodeRunner Web runs entirely within your browser, so there's no need to download or install any additional software. Simply ensure you have a modern web browser with JavaScript enabled.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can find the hosted version at the link below
+[CodeRunner Web](https://code-runner-web.netlify.app)
+https://code-runner-web.netlify.app
 
-### `npm run build`
+Happy coding!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Brian-Kipyegon*

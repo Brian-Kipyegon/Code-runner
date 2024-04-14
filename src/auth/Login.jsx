@@ -11,6 +11,7 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
+    // Function to authenticate a user
     const login = (e) => {
         e.preventDefault();
 

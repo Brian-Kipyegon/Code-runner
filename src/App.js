@@ -8,22 +8,27 @@ import { useAuth } from './context-stores/Authcontext';
 import Loading from './pages/Loading';
 
 function App() {
-  const { loading, user, user_data } = useAuth();
+  // Retrieving user data from authentication context store
+  const { loading, user } = useAuth();
 
+  // Component for loading screen.
   if (loading) {
     return <Loading />
   }
 
   return (
     <div className="App">
+      {/* Application Routes */}
       <Routes>
         {
           user ? (
+            // Authenticated user routes
             <>
               <Route path="/" element={<RequiresAuth><Home /></RequiresAuth>} />
               <Route path="/home" element={<RequiresAuth><Home /></RequiresAuth>} />
             </>
           ) : (
+            // Unauthenticated user routes
             <>
               <Route path="/" element={<Login />} />
               <Route path="/sign-up" element={<Signup />} />

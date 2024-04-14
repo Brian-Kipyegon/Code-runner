@@ -22,6 +22,7 @@ export default function Home() {
   const navigate = useNavigate();
   const { user } = useAuth();
 
+  // State
   const [code, setCode] = useState('');
   const [output, setOutput] = useState('');
   const [running, setRunning] = useState(false);
@@ -37,6 +38,7 @@ export default function Home() {
   const [fileName, setFileName] = useState('');
   const [fileId, setFileId] = useState('');
 
+  // Supported Languages
   const langs = {
     "python": {"language":"python","version":"3.10.0","aliases":["py","py3","python3","python3.10"], filext: "py"},
     "javascript": {"language":"javascript","version":"18.15.0","aliases":["node-javascript","node-js","javascript","js"],"runtime":"node", filext: "js"},
@@ -57,6 +59,7 @@ export default function Home() {
     return () => unsub();
   }, [user.uid]);
 
+  // Logs out a user
   const logout = () => {
     signOut(auth).then(() => {
       navigate('/login');
@@ -69,6 +72,7 @@ export default function Home() {
     setCode(newCode);
   };
 
+  // Runs code snippet
   const run = () => {
     setRunning(true);
     const options = {
@@ -91,6 +95,7 @@ export default function Home() {
     });
   }
 
+  // Saves a user's code to firebase
   const save = () => {
     //save to firebase
     const colRef = collection(db, "files");
@@ -110,6 +115,7 @@ export default function Home() {
 
   }
 
+  // Updates a file
   const saveChanges = () => {
     console.log("Updating file with file id: ", fileId);
     const docRef = doc(db, "files", fileId);
@@ -158,6 +164,7 @@ export default function Home() {
               )
             }
           </div>
+          {/* Monaco Editor for code editing */}
           <Editor
             height="80vh"
             language={language}

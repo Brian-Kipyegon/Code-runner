@@ -9,7 +9,7 @@ export function useAuth() {
     return useContext(AuthContext);
 }
 
-// Provides Authentication services.
+// Global context that saves and authenticated user.
 export default function AuthContextProvider({ children }) {
 
     const [user, setUser] = useState(false);
