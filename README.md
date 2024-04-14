@@ -7,7 +7,7 @@ Welcome to CodeRunner Web! CodeRunner Web is a powerful web-based application th
 1. **Multi-Language Support:** CodeRunner Web supports a wide range of programming languages, including but not limited to Python, JavaScript, and many more.
 2. **Real-Time Code Execution:** Write your code and see the results instantly with our real-time code execution feature.
 3. **Integrated Code Editor:** Our intuitive and feature-rich code editor offers syntax highlighting, code completion, and indentation assistance.
-6. **Save and Share Code Snippets:** Save your code snippets for future reference.
+6. **Save** Save your code snippets for future reference.
 
 ## Getting Started
 
