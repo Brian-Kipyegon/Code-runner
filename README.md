@@ -20,9 +20,10 @@ Welcome to CodeRunner Web! CodeRunner Web is a powerful web-based application th
 
 CodeRunner Web runs entirely within your browser, so there's no need to download or install any additional software. Simply ensure you have a modern web browser with JavaScript enabled.
 
-You can find the hosted version at the link below
+You can find the hosted version at the link here
 [CodeRunner Web](https://code-runner-web.netlify.app)
-https://code-runner-web.netlify.app
+
+![Image Description](./assets/code-runner-screenshot.PNG)
 
 Happy coding!
 
